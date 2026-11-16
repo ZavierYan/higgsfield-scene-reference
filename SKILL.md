@@ -15,6 +15,7 @@ Read [references/scene-workflow.md](references/scene-workflow.md) completely bef
 - Show the room's two main wall planes, floor relationship, furniture footprint, and the complete upper ceiling region with visible light fixtures.
 - Default to an inhabited, styled room: visibly include throw pillows and a throw blanket on seating, at least one credible plant, a restrained floral arrangement, small decor, and subordinate auxiliary lighting when compatible with the brief. Preserve clear circulation and let the user's scene override these defaults.
 - Keep the root style, palette, architecture, lighting, camera, and spatial hierarchy decisive. Writing a concrete value locks it; writing `<HIGGSFIELD_FILL>` or `<HIGGSFIELD_FILL: short hint>` leaves it for Higgsfield's prompt LLM to resolve. Do not add status fields.
+- Treat the furniture program as a design decision, not a template consequence. If the user has not specified it, keep layout and selection OPEN and let Higgsfield choose a functional, varied mix rather than defaulting to one sofa plus two chairs. When distinct scene concepts are requested, vary the primary furniture typology or arrangement as well as the art direction.
 - Use at least two visibly distinct hue families, not merely different tints or shades of one color. The style guide must include percentage weights for every palette color that total 100%.
 - Keep API configuration out of `scene.yaml`. Model, aspect ratio, resolution, candidate count, repair budget, and reference media IDs belong to the generation call.
 - A user request to create the scene authorizes exactly one paid candidate. If a hard constraint fails, repair the prompt and generate once more. Stop after that second result.
@@ -34,7 +35,7 @@ Read [references/scene-workflow.md](references/scene-workflow.md) completely bef
 ## Workflow
 
 1. Extract the user's scene, style, product, framing, and extra constraints.
-2. Fill the decisions that must stay stable with concise, concrete values. Mark the remaining visual details with a `<HIGGSFIELD_FILL>` placeholder. Add only a short inline hint when the design space is not obvious.
+2. Fill the decisions that must stay stable with concise, concrete values. Mark the remaining visual details with a `<HIGGSFIELD_FILL>` placeholder. Keep an unspecified furniture program open instead of completing the template with a familiar seating group; add only a short inline hint when the design space is not obvious.
 3. Write a keyword-led style guide with four to six labeled dimensions. Use two to five precise professional terms per dimension; do not write a long explanatory paragraph or restate every YAML field. Include one `Palette` line with explicit percentages, for example `60% warm ivory; 25% deep petrol; 10% smoked oak; 5% brass`.
 4. Scaffold and validate the scene with the included script. On Windows, use the wrapper so it can locate a Python runtime with PyYAML:
 

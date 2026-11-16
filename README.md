@@ -84,8 +84,9 @@ scripts/run_scene_spec.ps1
 1. Lock stable decisions; leave room for Higgsfield to resolve secondary details.
 2. Keep prompts short and professional rather than exhaustively specifying every object.
 3. Use at least two visibly distinct hue families with explicit palette percentages.
-4. Reuse accepted scene references instead of regenerating the environment.
-5. Create a sibling scene when layout or product identity materially changes.
+4. Leave an unspecified furniture program open and vary furniture typology across distinct scene concepts.
+5. Reuse accepted scene references instead of regenerating the environment.
+6. Create a sibling scene when layout or product identity materially changes.
 
 ## License
 

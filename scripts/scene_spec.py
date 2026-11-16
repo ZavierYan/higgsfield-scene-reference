@@ -186,7 +186,7 @@ SCENE TREE
 {scene_tree}
 ```
 
-OPEN FIELDS: Resolve each `<HIGGSFIELD_FILL>` into a coherent visual choice. Never render placeholders, field names, specification markup, labels, or readable text.
+OPEN FIELDS: Resolve each `<HIGGSFIELD_FILL>` into a coherent visual choice. When furnishings are OPEN, use an intentional, non-default seating program and vary its typology or arrangement between distinct scene concepts. Never render placeholders, field names, specification markup, labels, or readable text.
 
 STYLE GUIDE
 {style_guide.strip()}

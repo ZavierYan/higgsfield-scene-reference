@@ -55,6 +55,14 @@ Write a concrete value for:
 
 Use `<HIGGSFIELD_FILL>` for secondary decor, ornamental motifs, subtle material variation, and other details that can vary while preserving the design grammar.
 
+## Furniture program
+
+Do not let the composition fall back to one sofa, two chairs, and a coffee table by habit. When the user leaves furniture unspecified, keep both `layout` and `furniture_selection` OPEN so Higgsfield can choose a coherent program suited to room function, architecture, and circulation.
+
+Useful programs include a curved sectional with a chaise, perpendicular or facing sofas, built-in banquette seating with loose chairs, a daybed with an ottoman, a pair of settees, a club-chair grouping around side tables, and mixed modular seating. A room does not need every category; the program should feel intentional and leave believable routes through the space.
+
+When the request calls for distinct scene concepts, change the primary furniture typology, orientation, or composition across alternatives. A new palette, wall finish, or decor pass alone is not a sufficiently different scene.
+
 ## Density and decor
 
 The template defaults to a lived-in, styled room. Include visibly layered throw pillows and a draped or folded throw blanket on seating, one or two credible plants with appropriate containers, one restrained floral or flowering-branch arrangement, deliberate small decor, and one or more visible auxiliary table, floor, or wall lights. Keep these subordinate to the main architecture and lighting, and preserve circulation. A scene brief may explicitly replace or remove these defaults.
@@ -144,6 +152,7 @@ Check:
 
 - one seamless image;
 - readable wall planes, furniture footprint, floor contacts, and circulation;
+- an intentional furniture program, varied beyond the default sofa-plus-two-chairs group when the brief leaves furniture open;
 - ceiling design and fixtures visible;
 - no people, portraits, or identifiable faces;
 - window exteriors are bright daytime;

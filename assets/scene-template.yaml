@@ -39,7 +39,8 @@ scene:
       children: {}
     major_furnishings:
       type: zone
-      layout: "{{furniture_layout}}"
+      layout: "<HIGGSFIELD_FILL: functional seating footprint, orientation, and circulation suited to this room>"
+      furniture_selection: "<HIGGSFIELD_FILL: coherent varied mix of seating, tables, storage, and occasional pieces; avoid a default sofa-plus-two-chairs group>"
       construction: "<HIGGSFIELD_FILL: silhouettes, scale, joinery, weight, and floor contact>"
       surfaces: "<HIGGSFIELD_FILL: materials, seams, wear, and reflections>"
       children:

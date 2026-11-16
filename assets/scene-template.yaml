@@ -1,0 +1,80 @@
+schema_version: 1
+
+asset:
+  id: "{{scene_slug}}"
+  name: "{{scene_name}}"
+
+scene:
+  intent: "{{scene_intent}}"
+  composition:
+    camera_height: "Eye level, approximately 1.6 to 1.8 meters"
+    perspective: "Slightly elevated three-quarter view; natural wide angle"
+    framing: "Two wall planes; furniture footprint; full visible ceiling and fixtures"
+    depth: "Readable foreground, middle ground, background, and circulation"
+    product_visibility: "If attached, the hero product must be clearly recognizable and visually important; partial cropping is allowed"
+  style:
+    visual_language: "{{visual_language}}"
+    interior_direction: "{{interior_direction}}"
+    palette: "{{color_palette}}"
+    spatial_design: "{{spatial_design}}"
+    material_language: "<HIGGSFIELD_FILL: restrained material hierarchy>"
+    lighting: "{{lighting_design}}"
+    ceiling: "Visible; resolved perimeter or cove; one or more attached fixtures"
+    density: "Lived-in restraint; layered soft goods; plants; florals; small decor; auxiliary light; clear circulation"
+  constraints:
+    spatial_clarity: "Object positions and room geometry must be immediately legible"
+    ceiling_visible: "The ceiling surface and light fixtures must be clearly visible"
+    no_people: "No people, human figures, faces, portraits, portrait paintings, or identifiable human imagery"
+    no_dead_space: "Fill empty regions with purposeful furniture, decor, or architectural detail"
+    daylight_windows: "Any exterior window view must be bright clear daytime"
+    no_spec_text: "Do not render YAML, field names, placeholders, labels, captions, watermarks, or readable text"
+  nodes:
+    architecture:
+      type: zone
+      shell: "Enclosed interior with physically coherent geometry"
+      wall_surfaces: "<HIGGSFIELD_FILL: finish, joints, trim, and edges consistent with the style>"
+      floor: "<HIGGSFIELD_FILL: material, scale, joint direction, and finish>"
+      ceiling: "Complete ceiling design; fixtures visibly attached"
+      windows: "<HIGGSFIELD_FILL: proportion, frame, treatment, and bright daytime exterior>"
+      children: {}
+    major_furnishings:
+      type: zone
+      layout: "{{furniture_layout}}"
+      construction: "<HIGGSFIELD_FILL: silhouettes, scale, joinery, weight, and floor contact>"
+      surfaces: "<HIGGSFIELD_FILL: materials, seams, wear, and reflections>"
+      children:
+        seating_soft_goods:
+          type: object
+          pillows: "Two or more throw pillows with varied scale and texture"
+          throw: "A visibly draped or folded throw blanket"
+          children: {}
+    lighting_fixtures:
+      type: zone
+      fixture_family: "<HIGGSFIELD_FILL: coherent forms and believable scale>"
+      light_behavior: "{{light_behavior}}"
+      attachment: "<HIGGSFIELD_FILL: believable attachment, wiring, and shadows>"
+      children:
+        auxiliary_lighting:
+          type: object
+          placement: "One or more visible table, floor, or wall lights"
+          role: "Subordinate to the main ceiling fixture and daylight"
+          children: {}
+    decor_and_fill:
+      type: zone
+      required_fill: "Purposeful decor or architectural detail; no visibly empty zones"
+      objects: "<HIGGSFIELD_FILL: restrained non-repetitive objects with distinct silhouettes and materials>"
+      negative_space: "<HIGGSFIELD_FILL: balance density and readable circulation>"
+      children:
+        plant_display:
+          type: object
+          scale: "One or two credible plants in scale-appropriate containers"
+          children: {}
+        floral_display:
+          type: object
+          form: "One restrained floral arrangement or flowering branch display"
+          vessel: "<HIGGSFIELD_FILL: character and scale consistent with the room>"
+          children: {}
+        small_decor:
+          type: object
+          cluster: "Books, ceramics, trays, or sculpture in deliberate clusters"
+          children: {}

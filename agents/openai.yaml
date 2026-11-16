@@ -1,0 +1,4 @@
+interface:
+  display_name: "Higgsfield Scene Reference"
+  short_description: "Create reusable Higgsfield scene reference trees and images"
+  default_prompt: "Use $higgsfield-scene-reference to create a reusable 16:9 scene reference image with a complete ceiling design."

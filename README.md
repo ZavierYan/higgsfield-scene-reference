@@ -14,7 +14,7 @@ only the decisions that must remain stable, leave secondary details as
 
 - Scaffolds a scene tree from `assets/scene-template.yaml`.
 - Validates locked values, placeholders, palette ratios, and API-data boundaries.
-- Compiles a concise Higgsfield prompt capped at 100 lines.
+- Compiles a concise Higgsfield prompt capped at 120 lines.
 - Supports product references without inventing or copying unrelated product details.
 - Enforces clear spatial composition, a visible ceiling and fixtures, no people or portraits, purposeful density, and bright daytime window views.
 - Keeps generation metadata outside `scene.yaml`.

@@ -45,7 +45,7 @@ Read [references/scene-workflow.md](references/scene-workflow.md) completely bef
    pwsh scripts/run_scene_spec.ps1 compile scenes/<slug>/scene.yaml --style-guide scenes/<slug>/style-guide.txt --out scenes/<slug>/prompts/reference-v1.txt
    ```
 
-   Outside Windows, run the same commands through a Python interpreter that has PyYAML. The compiler rejects prompts over 100 lines by default.
+   Outside Windows, run the same commands through a Python interpreter that has PyYAML. The compiler rejects prompts over 120 lines by default.
 
 5. Upload local product references through Higgsfield before generation. Pass the returned media IDs, aspect ratio, resolution, model choice, candidate count, and repair budget directly to the API call; keep them out of `scene.yaml` and the compiled prompt.
 6. Submit the compiled prompt to the selected Higgsfield image model. Render and inspect the result against the hard-constraint checklist before calling the task complete.

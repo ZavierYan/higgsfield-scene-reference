@@ -115,7 +115,7 @@ pwsh scripts/run_scene_spec.ps1 compile scenes/<slug>/scene.yaml \
   --out scenes/<slug>/prompts/reference-v1.txt
 ```
 
-The default hard limit is 100 lines. The compiler:
+The default hard limit is 120 lines. The compiler:
 
 - serializes only `scene`;
 - rejects a top-level `generation` block;
@@ -126,7 +126,7 @@ The default hard limit is 100 lines. The compiler:
 - requires at least one OPEN placeholder.
 - requires a `Palette:` line with at least two percentages totaling 100%.
 
-If the prompt exceeds 100 lines, shorten the tree, the style guide, or filenames. Do not restore the removed control wrapper.
+If the prompt exceeds 120 lines, shorten the tree, the style guide, or filenames. Do not restore the removed control wrapper.
 
 ## Generation routing
 

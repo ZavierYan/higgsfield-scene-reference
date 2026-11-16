@@ -311,7 +311,7 @@ def parser() -> argparse.ArgumentParser:
     compile_cmd.add_argument("scene")
     compile_cmd.add_argument("--style-guide", required=True)
     compile_cmd.add_argument("--out", required=True)
-    compile_cmd.add_argument("--max-lines", type=int, default=100)
+    compile_cmd.add_argument("--max-lines", type=int, default=120)
     compile_cmd.set_defaults(func=command_compile)
     return root
 
